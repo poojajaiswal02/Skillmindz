@@ -68,17 +68,6 @@
             <input type="email" name="email" placeholder="Email" required>
             <input type="text" name="city" placeholder="City" required>
 
-            <!-- <select name="college" id="college" onchange="updateCourses()" required>
-              <option value disabled selected>Select University</option>
-              <option value="jain">Jain Online</option>
-              <option value="shrada">Sharda University</option>
-              <option value="vellore">Vellore Institute of Technology(VIT)</option>
-              <option value="dypatil">Dr. D. Y. Patil Vidyapeeth Pune(DPU)</option>
-            </select>
-            <select name="course" id="course" required>
-              <option value disabled selected> Select Courses</option>
-            </select> -->
-
             <select name="course" id="course" onchange="updateCourses()" required >
               <option value disabled selected> Select Courses</option>
               <option value="mba">Master of Business Administration (MBA )</option>
