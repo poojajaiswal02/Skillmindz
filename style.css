@@ -1,0 +1,864 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    appearance: none; /* Removes the default browser styling */
+    -webkit-appearance: none; /* Removes default styling in Safari */
+    -moz-appearance: none; /* Removes default styling in Firefox */
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.allTitle{
+    /* margin-top: 30px; */
+    margin-bottom: 30px;
+}
+
+.allTitle h1{
+    padding: 20px 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.allTitle h2{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.allTitle h5{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+header{
+    height: 90px;
+}
+.navbar img{
+    height: 80px;
+    width: 240px;
+    display: block;
+}
+
+
+/* ::::: Home ::::: */
+.bannerSlider img {
+    height: 80vh;
+}
+.inquiryForm{
+    width: 400px;
+    position: absolute;
+    top: 150px;
+    right: 0;
+    padding: 20px;
+    display: block;
+    background-color: white;
+    margin: 50px 80px 50px 0;
+    /* float: right; */
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.inquiryForm h4{
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.inquiryForm form{
+    margin: 0 10px;
+}
+
+.inquiryForm input{
+    width: 330px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.inquiryForm select{
+    width: 330px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 1px solid #767675;
+    color: black;
+}
+
+.inquiryForm-btn{
+    text-align: center;
+}
+
+.inquiryForm-btn button{
+    background-color: #B41616!important;
+    color: white;
+    border: transparent;
+    padding: 20px 40px;
+    font-weight: 600;
+}
+
+
+/* ======== Start Ranking College ======== */
+.scroll-university-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    /* padding-bottom: 30px; */
+    /* background-color: red; */
+}
+
+.uni-scroll {
+    justify-content: space-between;
+    /* margin: 0 auto; */
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    background-color: white;
+    border-radius: 10px;
+    width: 100%; /* Ensures container uses the full width of the parent */
+    max-width: 1300px; /* Adjust the maximum width to hold more cards */
+    /* Hide the scrollbar */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+.uni-scroll::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.uni-name {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 100px;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+    position: relative;
+    overflow: hidden;
+    /* transition: all .3s ease; */
+}
+
+.uni-name img {
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0;
+    max-height: 4.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.uni-name:hover {
+    transform: scale(1.05);
+}
+
+.scroll-btn {
+    /* Hide the buttons initially */
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.scroll-btn.left {
+    left: 0;
+}
+
+.scroll-btn.right {
+    right: 0;
+}
+/* ::::: End Ranking College ::::: */
+
+
+/* ::::: Our Courses section ::::: */
+/*  Bachalore  */
+.our-courses{
+    min-height: 90%;
+    min-width: 100%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.courseDetails h5{
+    font-size: 16px;
+    /* font-weight: 400; */
+    color: black;
+}
+
+.degree-courses-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* width: 80%; */
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slides-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.courseSlide {
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    /* gap: 20px; */
+    min-width: 305px;
+    margin: 0 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.courseDetails h5{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.courseSlide img {
+    width: 100%;
+    height: 200px;
+    /* border-radius: 10px; */
+}
+
+.courseDetails .btn{
+    position: absolute; 
+    bottom: 10px;
+    /* margin: 40px 0;  */
+}
+
+.courseDetails{
+    height: 290px;
+    color: black;
+    background-color: white;
+}
+
+ .courseDetails:hover{
+    background-color: #B41616;
+    color: black;
+}
+
+.courseDetails .btn{
+    padding: 10px;
+    background-color: #B41616;
+    color: white;
+    border: transparent;
+    font-weight: 600;
+}
+
+.courseDetails .btn:hover{
+    background-color: white;
+    color: #B41616;
+    font-weight: 600;
+    border: transparent;
+}
+
+button.prev, button.next {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* ::::: Masters Course ::::: */
+.master-courses-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* width: 80%; */
+    margin: auto;
+    overflow: hidden;
+}
+
+.masterCourse {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.masters-content{
+    display: flex;
+    transition: transform 0.5s ease;
+    margin-bottom: 30px;
+    /* overflow: hidden; */
+}
+
+.master-slide {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    min-width: 305px;
+    margin: 0 10px;
+}
+.master-slide img {
+    width: 100%;
+    height: 200px!important;
+}
+.master-course-details h5{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.master-course-details .btn{
+    position: absolute; 
+    bottom: 10px;
+}
+
+.master-course-details{
+    height: 290px!important;
+    color: black;
+    background-color: white;
+}
+
+ .master-course-details:hover{
+    background-color: #B41616;
+    color: black;
+}
+
+.master-course-details .btn{
+    padding: 10px;
+    background-color: #B41616;
+    color: white;
+    border: transparent;
+    font-weight: 600;
+}
+
+.master-course-details .btn:hover{
+    background-color: white;
+    color: #B41616;
+    font-weight: 600;
+    border: transparent;
+}
+
+button.prev2, button.next2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+button.prev2 {
+    left: 10px;
+}
+
+button.next2 {
+    right: 10px;
+}
+
+button.prev2:hover, button.next2:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* =========== About us ============== */
+.about-content{
+    margin: 40px 30px;
+}
+.about-content p{
+    width: 100%;
+}
+.about-image{
+    margin: 0 50px;
+}
+.about-image img{
+    height: 500px;
+    width: 100%;
+}
+
+
+/* ::::: Top Companies Logo ::::: */
+.companies-slider {
+	--totSlides: 10;
+	--slideWidth: 200px;
+	--slideHeight: 100px;
+	--animationSpeed: calc(2s * var(--totSlides));
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+	height: var(--slideHeight);
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.companies-slider .slides-com {
+	animation: scroll var(--animationSpeed) linear infinite;
+	display: flex;
+	width: calc(var(--slideWidth) * var(--totSlides) * 2);
+    gap: 20px;
+}
+
+.companies-slider .slide {
+	height: 120px;
+	width: var(--slideWidth);
+	overflow: hidden;
+}
+
+.companies-slider .slide img {
+	height: 100%;
+	width: auto;
+	max-width: 100%;
+	object-fit: contain;
+}
+
+@keyframes scroll {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(calc(var(--slideWidth) * var(--totSlides) * -1));
+	}
+}
+
+
+
+/* ::::: Student Feedback :::::  */
+.students-feedback{
+    width: 100%;
+}
+
+.testimonial-slider {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    border: 2px solid transparent;
+    padding: 20px;
+    text-align: center;
+    background-color: #B41616;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 360px!important;
+}
+
+.testimonial-card:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid #B41616;
+}
+
+.testimonial-card .student-name{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.testimonial-card .student-rating{
+    margin: 20px 0;
+   color: #FFCC00;
+}
+
+.testimonial-card p{
+    text-align: left;
+}
+
+.slick-slide {
+    margin: 0 10px;
+}
+
+.slick-dots {
+    bottom: -30px;
+}
+
+.slick-dots li button:before {
+    font-size: 15px;
+    color: #333;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #007bff;
+}
+
+@media (max-width: 992px) {
+    .testimonial-slider {
+        width: 100%;
+    }
+    .testimonial-card {
+        height: 360px!important;
+    }
+    .slick-slide {
+        margin: 0 5px;
+    }
+}
+@media (max-width: 768px) {
+    .slick-slide {
+        margin: 0 2px;
+    }
+}
+@media (max-width: 576px) {
+    .slick-slide {
+        margin: 0;
+    }
+}
+
+
+
+
+/* ========  Footer section ::::: */
+footer{
+    background-color: black;
+    margin-top: 50px;
+}
+
+.footer-section{
+    padding: 50px 0;
+    color: white;
+}
+
+.footer-section h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    border-bottom: 2px solid white;
+    width: 80px;
+}
+
+.courses-list ul{
+    padding-left: 0;
+}
+
+.courses-list ul li{
+    list-style: none;
+    line-height: 1.5rem;
+    font-size: 16px;
+
+}
+
+.courses-list ul li i{
+    margin-right: 10px;
+}
+
+.courses-list ul li a:hover{
+  color: #ED1B24;
+
+}
+
+.courses-list ul li a{
+    text-decoration: none;
+    color: white;
+
+}
+.footer-section i{
+    color: #ED1B24;
+}
+
+.address1{
+   display: flex;
+   font-size: 16px;
+}
+
+.address1 i{
+    margin-right: 10px;
+    line-height: 25px;
+}
+
+.contact-us{
+    display: flex;
+    gap: 10px;
+    line-height: 10px;
+}
+.privacy p{
+    margin-top: 20px;
+    font-size: 18px;
+    color: white;
+}
+/* .privacy p a{
+    color: #B41616;
+} */
+
+
+/* ::::: Thank You Page ::::: */
+.thankYou{margin: 70px auto; }
+
+.thankYou h1{
+    color: #B41616;
+    font-size: 40px;
+    text-align: center;
+}
+.thankYou h1{
+    color: #B41616;
+    font-size: 40px;
+    text-align: center;
+} 
+.thankYou .inquiry {
+    text-align: center;
+    margin: 50px auto ;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.inquiry a{
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;font-size: 18px;
+    border: 2px solid #B41616;
+    background-color: #B41616;
+    color: white;
+}
+.inquiry a i{
+    font-size: 20px;
+    line-height: 10px;
+}
+.inquiry a:hover{
+    border: 2px solid #B41616;
+    color: #B41616;
+    background-color: white;
+}
+
+/* ::::: WhatsApp icon ::::: */
+.whatsapp-chat {
+    position: fixed;
+    bottom: 55px;
+    right: 100px;
+    z-index: 9999;
+}
+
+.whatsapp-chat img { width: 50px;} 
+
+.privacy-policy h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 425px) {
+    .allTitle h2 {
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .allTitle h1{
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    .homeSection{margin-bottom: 20px;}
+
+    .bannerSlider img {
+        height: 40vh !important;
+        margin-bottom: 10px;
+    }
+
+    #block{ display: block; }
+
+    .inquiryForm{    
+        width: 40%;
+        position: relative;
+        top: 0px;
+        padding: 20px;
+        background-color: white;
+        margin: 20px auto;
+        display: inline-block;
+        z-index: 2;
+    }
+
+    /* ::::: Our courses ::::: */
+    .courseSlide {
+        align-items: center;
+        min-width: 370px!important;
+        margin: 10px 10px;
+    }
+    .master-slide {
+        align-items: center;
+        min-width: 370px!important;
+        margin: 10px 10px;
+    }
+
+    /* ::::: About us ::::: */
+    .about-content{
+        margin: 0;
+        padding: 10px;
+    }
+    .about-content h1{
+        padding: 0;
+    }
+    .about-content p{
+        width: 100%;
+    }
+    .about-image{
+        margin: 0;
+    }
+    .about-image img{
+        height: 450px;
+        width: 100%;
+    }
+    
+    /* ::::: Our Courses ::::: */
+    .our-courses{
+        min-width: 100%;
+        position: relative;
+        z-index: 1; 
+    }
+
+    /* ::::: Thank You Page ::::: */
+    .thankYou h1{
+        font-size: 25px;
+    }
+
+    /* ::::: WhatsApp icon ::::: */
+    .whatsapp-chat {
+        right: 30px;
+    }
+    .whatsapp-chat img {
+       width: 40px;
+    }     
+
+    
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .bannerSlider img {
+        height: 50vh!important;
+    }
+    .inquiryForm input{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .inquiryForm select{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .inquiryForm-btn button{
+        background-color: #ED1B24;
+        width: 100%;
+    }
+    .inquiryForm{
+        border: 1px solid #ccc;
+        /* margin: 10px; */
+        width: 100%;
+        position: relative;
+        top: 0px;
+        padding: 20px;
+    }
+    /* ::::: Footer ::::: */
+    .privacy p{
+        font-size: 16px;
+    }
+    .courseSlide {
+        min-width: 345px;
+        margin: 0 10px;
+    }
+
+}
+
+
+@media (max-width: 1024px) {
+    .bannerSlider img {
+        height: 90vh;
+    }
+    .inquiryForm {
+        /* width: 400px;
+        position: absolute; */
+        /* top: 60px;
+        right: 0; */
+        margin: 10px 65px 30px 0;
+    }
+    .courses-list ul li{
+        font-size: 14px;
+    
+    }
+    .address1{
+        font-size: 14px;
+    }
+    .courseSlide {
+        width: 290px!important;
+    }
+}
+
+
+
+
+@media (max-width: 1366px) {
+    .bannerSlider img {
+        height: 80vh;
+    }
+    .courseSlide {
+        min-width: 350px;
+        margin: 0 10px;
+    }
+    .courseDetails {
+        height: 250px;
+    }
+
+    .master-slide {
+        min-width: 350px;
+    }
+    .master-course-details {
+        height: 260px !important;
+        color: black;
+        background-color: white;
+    }
+}
+
+
+
+
+
+
+
